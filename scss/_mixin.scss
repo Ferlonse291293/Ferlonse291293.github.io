@@ -1,0 +1,41 @@
+@mixin ps-icons($top, $left,$url,$b-s1,$b-s2,$width,$height) {
+    content: "" ;
+    position: absolute;
+    top:$top;
+    left:$left;
+    background-image: url($url);
+  
+    background-repeat: no-repeat;
+    background-size: $b-s1 $b-s2;
+    width: $width;
+    height: $height;
+    
+  display: block;
+}
+@mixin link-button($font-size, $line-height, $font-family,$color,$background-color){
+   
+    font-size: $font-size; 
+    line-height: $line-height;
+    font-family: $font-family; 
+    color: $color;
+    background: $background-color;
+    text-decoration: none;
+    list-style: none;
+}
+
+@mixin text ($font-size, $line-height, $font-family,$color){
+    font-size: $font-size; 
+    line-height: $line-height;
+    font-family: $font-family; 
+    color:$color;
+
+}
+
+
+
+
+
+
+
+
+

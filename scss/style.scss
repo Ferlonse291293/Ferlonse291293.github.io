@@ -1,0 +1,1011 @@
+@import "../fonts/fonts.css" screen;
+
+@import "mixin";
+
+// Переменные шрифта текста
+$textExtrabold:'ralewayextrabold';
+$textRegular:'ralewayregular';
+$textSemibold:'ralewaysemibold';
+$textBold:'ralewaybold';
+$textMedium:'ralewaymedium';
+
+
+//Переменные размера текста
+
+
+//Переменные цветов
+
+$colorBlue:#061e37;
+$colorGrey:#b0bec5;
+$colorGrey2:#78909c;
+
+//тени
+
+$box-shadow1:0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+
+
+
+
+.header p,
+.header h1,
+.header h2,
+.footer p,
+.footer h1,
+.footer h2,
+.main p,
+.main h1,
+.main h2{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+html{
+    height:100%;
+}
+
+
+
+body{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    max-width:1600px;
+    margin:0 auto;
+}
+.wrapper-center{
+    max-width:1440px;
+    margin:0 auto;
+}
+
+
+
+
+////////// HEADER
+#header{
+    flex: 0 0 auto;
+    position: absolute;
+background: transparent;
+z-index: 3;
+width:100%;
+    
+                
+.wrapper-center{
+      padding: 35px 0;
+
+                    .main-header{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin:0 auto;
+                    padding-left:40px;
+                    box-sizing: border-box;
+                          // Стили логотипа
+                        .logo{
+                            position:relative;
+
+                                h1{
+                                    @include text(15px,15px,$textExtrabold,white)
+                                    
+                                }
+                                h1:first-child{
+                                    font-family: $textRegular;
+                                    
+                                }
+
+                        }
+                        .logo::before{
+                        @include ps-icons(0,-40px,'../img/bolt.png',30px,30px,30px,30px);
+
+                        }
+                         // Стили кнопок навигации
+                        .main-button{
+                             width: 442px;
+                             display: flex;
+                             flex-direction: row;
+                             justify-content: space-between;
+
+                                a{ 
+                                    @include link-button(15px,25px,$textSemibold,white,transparent);
+                                   
+                                }
+                                a:nth-child(2){
+                                    color:$colorBlue;
+                                }
+                        }
+                        //Стили кнопки входа
+                        .sign-in{
+
+                            a{
+                                @include link-button(12px,25px,$textRegular,white,transparent);
+                                display: inline-block;
+                                border:1px solid white;
+                                border-radius: 3px;
+                                padding: 0 19px;
+                            }
+                        }
+                        
+
+
+
+                    }
+            }
+};
+
+
+
+
+///////////////// блок MAIN
+#main{
+    flex: 0 1 auto;
+}
+    
+    
+
+    .wrapper{
+       position: relative;
+
+
+
+
+        .bg-image{
+    
+            position:absolute;
+            z-index: -2;
+            
+        }
+    
+        .bg-layer{
+            width:100%;
+            height: 750px;
+            background-image: linear-gradient( 143deg, rgba(29, 233, 182, 0.644) 0%,rgba(0, 184, 212, 0.795)  100%);
+            position:absolute;
+            z-index: -1;
+        }
+    
+
+        .top-block-with-video{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+          
+           
+            padding: 245px 0 180px 0;
+           
+            .wrapper-center{
+                
+                display: flex;
+                flex-direction: row;
+              
+                .left-section{
+                    flex-basis: 580px;
+
+
+
+                    
+                                h1{
+                                    @include text(55px,65px,$textExtrabold,white);
+                                    text-transform: uppercase;
+                                    max-width: 487px;
+
+                                }
+                                h2{
+                                    @include text(18px,35px,$textRegular,white);
+                                    margin-bottom:38.22px; 
+                                
+                                }
+                                .info-button{
+                                    display: flex;
+                                    flex-direction: row;
+                                    margin-top:auto;
+
+
+                                        .button-buy{
+                                            display: inline-block;
+                                            @include link-button(15px,auto,$textRegular,white,$colorBlue);
+                                            padding: 19.5px 54px;
+                                        
+                                            border-radius: 5px;
+                                            margin-right:30px;
+                                            box-shadow: $box-shadow1;
+                                            white-space:nowrap;
+                                            
+                                        }
+                                        .button-try{
+                                            @include link-button(15px,auto,$textBold,$colorBlue,white);
+                                            padding: 19.5px 30px;
+                                            border-radius: 5px;
+                                            box-shadow: $box-shadow1;
+                                            white-space:nowrap;
+                                            
+                                }
+                            }
+
+                       
+
+                }
+                .right-section{
+                    flex-basis: 60%;
+
+                    .video1{
+                        margin-left:auto;
+                        position: relative;
+                        width: 69%;
+                        max-height: 320px;
+                        min-height: 210px;
+                        border: 1px solid $colorBlue;
+                        border-radius: 5px;
+                        z-index: 3;
+                        overflow: hidden;
+                        box-shadow: $box-shadow1;
+                        background: url(../img/video.png) no-repeat;
+
+                       
+                          
+                       
+                        
+                       
+
+
+                        
+                    }
+                    
+                    .hidden{
+                       display:none;
+                    }
+                    .block-play{
+                        position: absolute;
+                        top:42%;
+                        left: 42%;
+                        text-align: center;
+                    #playBtn {
+                        position: relative;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        background: $colorBlue;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        margin: 0 auto 15px auto;
+                        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+
+                   
+                          
+
+                        
+                    }
+                    #playBtn::before{
+
+                    @include ps-icons(25px,25px,'../img/play_arrow.png',10px,12px,10px,12px);
+                    }
+                    p{
+                        @include text(12px,auto,$textBold,$colorBlue);
+                    }
+
+                }
+                   
+                    }
+                
+               
+            }
+          
+            
+        }
+
+    }
+
+.wrapper{
+    .block-info-easy-useful{
+        padding: 100px 0 100px 0;
+
+        .wrapper-center{
+            display: flex;
+            flex-direction: column;
+
+
+            .text-center{
+                max-width: 560px;
+                text-align: center;
+                margin: 0 auto 90px auto;
+                
+
+
+                h1{
+                    @include text(45px,auto,$textSemibold,$colorBlue);
+                    padding-bottom:15px;
+                }
+                h2{
+                    @include text(25px,auto,$textSemibold,$colorGrey);
+                    padding-bottom:15px;
+                }
+                p{
+                    @include text(15px,25px,$textRegular,$colorGrey);
+                    
+                }
+            }
+            .info-icons{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: center;
+                margin-bottom:68px;
+
+                    .block-services{
+                      width:350px;
+                      height:220px;
+                      margin-right: 15px;
+                      .block-img{
+                          margin-bottom:36px;
+                      }
+                     
+
+                      h1{
+                        @include text(20px,25px,$textSemibold,$colorBlue);
+                        margin-bottom:15px;
+                      }
+                      p{
+                        @include text(15px,20px,$textRegular,$colorGrey2); 
+                      
+                      }
+                      
+
+
+                    }
+
+                    .block-services:nth-child(2) .block-img{
+                        margin-bottom:26px;
+                    }
+                    .block-services:last-child{
+                        margin-right: 0;
+                    }
+
+            }
+            .info-button-2{
+                margin: 0 auto 20px auto;
+
+                .button-get-start{
+                    @include link-button(15px,auto,$textBold,white, #1de9b6);
+                                            padding: 18.5px 26px;
+                                            border-radius: 5px;
+                                            box-shadow: $box-shadow1;
+                }
+            }
+
+
+        }
+       
+
+    }
+}
+
+
+.wrapper{
+
+
+    .useful-icons{
+       display:flex;
+       flex-direction:row;
+       width: 100%;
+       
+
+       
+       section{
+           display:flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           width: 25%;
+           
+           
+           
+        
+       }
+
+       
+            ///background icons
+            
+           .icon1{
+                background: #31d9ff; 
+                
+            }
+            .icon2{
+                    background: #68b3ff;
+                   
+                }
+                 .icon3{
+                    background: #c289ff;
+                }
+                .icon4{
+                    background: #ff81ff;
+                }
+
+                .wrapper-icons{
+                    display:flex;
+           flex-direction: row;
+           
+           
+           max-width: 220px;
+
+           padding: 45px 0;
+
+
+                        .image{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            background: rgb(255, 255, 255);
+                            width:62px;
+                            height: 62px;
+                            border-radius: 60px; 
+                            
+                            
+                            
+
+                        }
+                        .text{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left:20px;
+                                h1{
+                                    @include text(20px,25px,$textExtrabold,white); 
+                                }
+                        }
+                }
+        
+            
+
+
+    }
+    
+        .block-info-Services{
+            padding: 100px 0 100px 0;
+    
+            .wrapper-center{
+                display: flex;
+                flex-direction: column;
+                
+    
+    
+                .text-center{
+                    max-width: 560px;
+                    text-align: center;
+                    margin: 0 auto 46px auto;
+                    
+    
+    
+                            h1{
+                                @include text(45px,auto,$textSemibold,$colorBlue);
+                                padding-bottom:15px;
+                            }
+                            h2{
+                                @include text(25px,auto,$textSemibold,$colorGrey);
+                                padding-bottom:15px;
+                            }
+                            p{
+                                @include text(15px,25px,$textRegular,$colorGrey);
+                                
+                            }
+                }
+
+                .block-services{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    width:55.5%;
+
+                    .service{
+                        display: flex;
+                        flex-direction: column;                   
+                        width: 100%;
+                        padding: 20px 25px 20px 25px;
+                        box-sizing: border-box;
+                        border-radius: 5px;                       
+                        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+                        margin-bottom: 10px;
+
+                                        .icon-text{
+                                            @include text(15px,auto,$textBold,$colorBlue);
+                                            margin-left: 20px;
+                                        }
+                                        .button-open{
+                                            margin-left:auto;
+                                        }
+                                        .link-service{
+                                            display: flex;
+                                            flex-direction: row;
+
+                                                    
+                                        }
+                    }
+
+
+                    .service:first-child{
+
+                                        .link-service{
+                                        margin-bottom: 15px;
+                                        }       
+                                        .modal-info{
+                                            display: flex;
+                                            flex-direction: row;
+
+
+                                            .text{
+                                                max-width: 470px;
+                                                margin-left:25px;
+
+                                                p{
+                                                    @include text(15px,25px,$textRegular,$colorBlue);
+                                                }
+                                                p:first-child{
+                                                    margin-bottom: 20px;
+                                                }
+
+                                            
+                                            }
+                                        }
+                    }
+
+
+                    .service:last-child{
+                        margin:0;
+                    }
+
+                   
+
+
+
+
+
+
+                }
+            }
+        }
+
+
+        
+
+
+}
+.wrapper{
+    .bg-subscribe{
+    
+        position:absolute;
+        z-index: -2;
+        
+    }
+         
+    .grad-subscribe{
+        width:100%;
+            height: 564px;
+            background-image: linear-gradient( 143deg, rgba(29, 233, 182, 0.980) 0%,rgba(0, 184, 212, 0.930)  100%);
+            position:absolute;
+            z-index: -1;
+    }
+
+    .Subscribe{
+        
+        padding: 42px 0;
+        box-sizing: border-box;
+        
+        
+        .wrapper-center{
+            display: flex;
+            flex-direction: row;
+
+
+            .block-left,
+            .block-right{
+                display: flex;
+            flex-direction: column;
+            }
+
+            .block-left{
+               padding-top:94px;
+               box-sizing: border-box;
+               max-width: 516px;
+                h1{
+                    @include text(45px,auto,$textSemibold,white);
+                    margin-bottom:25px;
+                    max-width: 444px;
+                }
+
+                p{
+                    @include text(15px,25px,$textSemibold,white); 
+                    margin-bottom:78px;
+                }
+                .button{
+                    @include link-button(15px,auto,$textBold,white,$colorBlue);
+                    padding: 19.5px 25px;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    box-shadow: $box-shadow1;
+                    max-width: 150px;
+                    margin-bottom:75px;
+                }
+            }
+            .block-right{
+                margin-left:auto;
+
+
+                
+                 .message{
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 70px;
+                    
+                 
+
+                    
+                                .profile-image{
+                                    margin-right:45px;
+                                    padding-top:5px;
+                                    box-sizing: border-box;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                }
+
+
+                                .text-message{
+                                        padding: 31px 32px 31px 64px;
+                                        box-sizing: border-box;
+                                        border-radius: 5px;                       
+                                        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+                                        background: white;
+                                        max-width: 650px;
+
+                                        h1{
+                                            @include text(18px,25px,$textBold,$colorBlue);  
+                                            margin-bottom: 15px;
+                                        }
+                                        p{
+                                            @include text(15px,auto,$textRegular,$colorGrey2);  
+                                        }
+                    
+                                    }
+                                 
+                         
+                           
+                }
+                .message:nth-last-child(2){
+                    margin-bottom: 33px;
+                }
+                
+                            .arrow-top,
+                            .arrow-buttom{
+                                padding-left:121px;
+                                box-sizing: border-box;
+                                margin: 0 auto;
+                            }
+                            .arrow-top{
+                                margin-bottom: 33px;
+                            }
+            }
+      }
+    }
+
+
+}
+
+
+         .block-info-OUR-TEAM{
+            padding: 95px 0 88px 0;
+    
+            .wrapper-center{
+
+                max-width: 650px;
+                display: flex;
+                flex-direction: column;
+                
+    
+    
+                .text-top{
+                    max-width: 560px;
+                    text-align: center;
+                    margin: 0 auto 75px auto;
+                    
+    
+    
+                            h1{
+                                @include text(45px,auto,$textSemibold,$colorBlue);
+                                padding-bottom:15px;
+                            }
+                           
+                            p{
+                                @include text(15px,25px,$textRegular,$colorGrey);
+                                
+                            }
+                }
+                .img-profile{
+                    display:flex;
+                    flex-direction: row;
+                    width:460px;
+                    justify-content: space-between;
+                    
+                    
+                    align-items: center;
+                    margin: 0 auto;
+                    margin-bottom:35px;
+                         
+                    .img2{
+                       background: url(../img/bg-circle.png) no-repeat center center;
+                    }
+                }
+
+                .text-bottom{
+                    
+                    text-align: center;
+                    margin: 0 auto 30px auto;
+                    
+    
+    
+                            h2{
+                                @include text(18px,25px,$textBold,$colorBlue);
+                                padding-bottom:15px;
+                            }
+                           
+                            p{
+                                @include text(15px,25px,$textRegular,$colorGrey);
+                                
+                            }
+
+                }
+                .social-button{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width:200px;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                }
+
+
+
+
+
+            }
+        }
+         .block-form-Contact-Us{
+                padding: 50px 0 100px 0;
+                background:#fafafa;
+        
+                .wrapper-center{
+    
+                    max-width: 605px;
+                    display: flex;
+                    flex-direction: column;
+                    
+        
+        
+                    .text-top{
+                        max-width: 560px;
+                        text-align: center;
+                        margin: 0 auto 45px auto;
+                        
+        
+        
+                                h1{
+                                    @include text(45px,auto,$textSemibold,$colorBlue);
+                                    padding-bottom:15px;
+                                }
+                               
+                                p{
+                                    @include text(15px,25px,$textRegular,$colorBlue);
+                                    
+                                }
+                    }
+
+
+                
+                    .form-subscribe{
+                            display: flex;
+                            flex-direction: row;
+                            max-width: 600px;
+
+                                input::placeholder,
+                                textarea::placeholder{
+                                @include text(14px,30px,$textMedium,$colorBlue);
+                               
+                                
+                                
+                                }
+                                
+
+                                input,
+                                textarea{
+                                    border-radius: 5px;
+                                    border:1px solid $colorBlue;
+                                    padding: 15px;
+                                    box-sizing: border-box;
+                                    width:280px;
+                                    margin-bottom: 20px;
+                                }
+
+                            
+
+                                textarea{ 
+                                    padding-top:10px; 
+                                    box-sizing: border-box;                       
+                                    resize: none;
+                                   width: 600px;
+                                   height: 150px;
+                                }
+                                .name,
+                                .email{
+                                    margin-right:35px;
+                                }
+
+
+                                .box-button{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                        label{
+                                            @include text(15px,auto,$textMedium,$colorBlue); 
+                                            
+                                        }
+
+                                    
+                                        
+                                        input[type="checkbox"] {
+                                            display:none;
+                                        }
+                                        input[type="checkbox"] + label span {
+                                            display:inline-block;
+                                            width:10px;
+                                            height:10px;
+                                            margin:0 9px 0 0;
+                                            vertical-align:middle;
+                                            border: 3px solid $colorBlue;
+                                            border-radius: 1px ;
+
+                                            cursor:pointer;
+                                        
+                                        }
+                                        input[type="checkbox"]:checked + label span {
+                                            width:14px;
+                                            height:14px;
+                                            border: 1px solid $colorBlue;
+                                            background:url(../img/Checkbox-blue.svg_.png)  no-repeat;
+                                            
+                                        }
+
+                                        .button-form{
+                                            @include link-button(16px,30px,$textMedium,white,#1de9b6);
+                                            padding: 10px 43.5px;
+                                            box-shadow: $box-shadow1;
+                                            border-radius: 3px;
+                                            margin-left: auto;
+                                        
+                                        }
+                            }
+                                      
+                                        
+                                    
+                                
+
+
+                    }
+
+
+                }
+
+            }
+
+        
+
+    
+
+
+
+
+
+
+
+
+#footer{
+    flex: 0 0 auto;
+    
+    .wrapper{
+        background:#061e37;
+     .wrapper-center{
+        padding: 95px 0 ;
+  
+                      .main-footer{
+                      display:flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      margin:0 auto;
+                      padding-left:40px;
+                      box-sizing: border-box;
+                      margin-bottom: 55px;
+                            // Стили логотипа
+                          .logo{
+                              position:relative;
+  
+                                  h1{
+                                      @include text(15px,15px,$textExtrabold,white)
+                                      
+                                  }
+                                  h1:first-child{
+                                      font-family: $textRegular;
+                                      
+                                  }
+  
+                          }
+                          .logo::before{
+                          @include ps-icons(0,-40px,'../img/bolt.png',30px,30px,30px,30px);
+  
+                          }
+                           // Стили кнопок навигации
+                          .main-button{
+                               width: 442px;
+                               display: flex;
+                               flex-direction: row;
+                               justify-content: space-between;
+  
+                                  a{ 
+                                      @include link-button(15px,25px,$textSemibold,white,transparent);
+                                     
+                                  }
+                                 
+                          }
+                        }
+                        .bottom-menu{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .about{
+                                display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 312px;
+
+                              h2{
+                                @include text(15px,25px,$textRegular,#838f9b)
+                              }
+                            }
+
+                            .social-button{
+                                display: flex;
+                            flex-direction: row;
+                                width: 174px;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+//reset-css-text-style
+
+
+
+
+
+
+
+  

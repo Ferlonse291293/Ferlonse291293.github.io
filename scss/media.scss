@@ -1,0 +1,1099 @@
+@import "../fonts/fonts.css" screen;
+
+@import "mixin";
+$textExtrabold:'ralewayextrabold';
+$textRegular:'ralewayregular';
+$textSemibold:'ralewaysemibold';
+$textBold:'ralewaybold';
+$textMedium:'ralewaymedium';
+
+
+//Переменные цветов
+
+$colorBlue:#061e37;
+$colorGrey:#b0bec5;
+$colorGrey2:#78909c;
+
+$box-shadow1:0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+
+@media (max-width:1470px){
+    .wrapper-center{
+        max-width:1240px;
+        margin:0 auto;
+    }
+
+}
+
+@media (max-width:1270px){
+    .wrapper-center{
+        max-width:1040px;
+        margin:0 auto;
+    }
+    .wrapper{
+   
+       
+
+
+
+        
+            .Subscribe{
+                
+                padding: 42px 0;
+                box-sizing: border-box;
+                
+                
+                .wrapper-center{
+                    margin:32px auto;
+                    
+        
+        
+                        .block-left,
+                        .block-right{
+                    
+                        }
+        
+                        .block-left{
+                        
+                                    h1{
+                                        @include text(40px,auto,$textSemibold,white);
+                                        margin-bottom:25px;
+                                      
+                                    }
+                    
+                                    p{
+                                        @include text(15px,25px,$textSemibold,white); 
+                                        margin-bottom:30px;
+                                    }
+                               
+                                }
+                                            
+                                            .block-right{
+                                                padding-top:40px;
+                                               
+
+                                              
+                    
+                                                .message:nth-last-child(2){
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .message{
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    margin-bottom: 20px;
+
+                                                    .text-message{
+                                                        padding: 31px 32px 31px 64px;
+                                                        box-sizing: border-box;
+                                                        border-radius: 5px;                       
+                                                        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+                                                        background: white;
+                                                        max-width: 650px;
+                
+                                                        h1{
+                                                            @include text(16px,15px,$textBold,$colorBlue);  
+                                                            margin-bottom: 15px;
+                                                        }
+                                                        p{
+                                                            @include text(13px,auto,$textRegular,$colorGrey2);  
+                                                        }
+                                    
+                                                    }
+
+                                                }
+                                                
+                                                .arrow-top{
+                                                    margin-bottom: 10px;
+                                                }
+                                            }
+                 
+                }
+                }
+            }
+                        
+    
+
+}
+
+
+
+
+@media (max-width:1080px){
+    .wrapper-center{
+        max-width:800px;
+    }
+  
+   .wrapper{
+    .top-block-with-video{
+     
+         
+        padding: 120px 0 80px 0;
+       
+        .wrapper-center{
+            max-width:750px;
+            display: flex;
+            flex-direction: column;
+          
+          padding: 0;
+          
+            .left-section{
+                flex-basis: 580px;
+                max-height: 250px;
+                margin-bottom:50px;
+                text-align: center;
+
+
+
+                
+                            h1{
+                                @include text(40px,45px,$textExtrabold,white);
+                                
+                               margin: 0 auto;
+
+                            }
+                            h2{
+                                @include text(16px,35px,$textRegular,white);
+                                margin-bottom:30px; 
+                            
+                            }
+                            .info-button{
+                                max-width: 350px;
+                                margin: 0 auto;
+                               
+                               
+                                
+                                .button-buy{
+                                    margin: 0;
+                                    margin-right: 10px;
+                                   
+                                }
+
+                            }
+                        }
+                        .right-section{
+                            flex-basis: 50%;
+                            max-height: 250px;
+                            .video1{
+                                margin: 0 auto;
+                                width: 50%;
+                                
+                                margin-bottom:50px;  
+                            }
+                            
+                            .block-play{
+                                
+                                top:35%;
+                                left: 38%;
+                                                              
+        
+                                
+                            }
+                            
+                        }
+
+
+
+                        video[poster]{
+                            width: 100%;
+                            max-height: 250px;     
+                                             
+                        }
+            }
+
+
+
+            
+        }
+    }
+
+// 2 блок
+.wrapper{
+    .block-info-easy-useful{
+        .wrapper-center{
+                       .text-center{
+                                h1{
+                                    @include text(40px,auto,$textSemibold,$colorBlue);
+                                    padding-bottom:15px;
+                                }
+            }
+        }
+    }
+}
+
+// Иконки
+.wrapper{
+    .useful-icons{  
+      
+
+       
+
+                .wrapper-icons{
+                              
+                        .text{
+                            
+                                h1{
+                                    @include text(18px,25px,$textExtrabold,white); 
+                                }
+                            }
+                        }
+                }
+            }
+
+
+// Service////////////////////////////////////
+            .wrapper{
+            .block-info-Services{
+            
+
+                .wrapper-center{
+                
+                    
+
+
+
+
+                    .block-services{
+                    
+                        width:90%;
+                    }
+                   
+
+                }
+            }
+
+
+            }
+
+            //subscribe/////////////////////////////
+            
+            .wrapper{
+   
+       
+
+
+
+        
+                .Subscribe{
+                    
+                    padding: 42px 0;
+                    box-sizing: border-box;
+                    
+                    
+                    .wrapper-center{
+                        margin:0 auto;
+                    
+                    
+                    .block-left{
+                        padding-top:84px;
+                    }
+                    .block-right{
+                        padding-top:30px;
+                    }
+                }
+                }
+            }
+        
+
+
+
+
+    }
+
+    @media (max-width:840px){
+        .wrapper-center{
+            max-width:320px;
+        }
+/////Header
+        #header{
+            flex: 0 0 auto;
+            position: absolute;
+        background: transparent;
+        z-index: 3;
+        width:100%;
+            
+                        
+        .wrapper-center{
+              padding: 35px 0;
+        
+                            .main-header{
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin:0 auto;
+                            padding-left:0;
+                            box-sizing: border-box;
+                            position: relative;
+                                                 .logo{
+                                                     margin:0 0 10px 40px;
+                                                 }
+
+                                                .main-button{
+                                                    width: 320px;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: space-between;
+                    
+                                                    a{ 
+                                                        @include link-button(15px,25px,$textSemibold,white,transparent);
+                                                        
+                                                    }
+                                                    a:nth-child(2){
+                                                        color:$colorBlue;
+                                                    }
+                                                    order: 1;
+
+                                                }
+                                                //Стили кнопки входа
+                                                .sign-in{
+                                                   position: absolute;
+                                                   top:0;
+                                                   right: 0;
+                        
+                                                    a{
+                                                        
+                                                     
+                                                        white-space: nowrap;
+                                                        
+                                                    }
+                                                    }
+
+                        }
+                    }
+                }
+/// блок 1
+                .wrapper{
+                    .top-block-with-video{
+                     
+                         
+                        padding: 140px 0 38px 0;
+                       
+                        .wrapper-center{
+                            max-width:320px;
+                         
+                            flex-direction: column;
+                          
+                
+                         
+                          
+                            .left-section{
+                                max-height: 340px;
+                                margin-bottom:20px;
+            
+            
+            
+                                
+                                            h1{
+                                                @include text(30px,35px,$textExtrabold,white);
+                                                text-transform: uppercase;
+                                                max-width: 487px;
+            
+                                            }
+                                            h2{
+                                                @include text(14px,35px,$textRegular,white);
+                                                margin-bottom:20px; 
+                                            
+                                            }
+                                            .info-button{
+                                               
+                                                flex-direction: column;
+                                                
+                                                max-width:160px;
+                                                margin: 0 auto;
+                                                
+            
+            
+                                                    .button-buy{
+                                                        @include link-button(12px,auto,$textRegular,white,$colorBlue);
+                                                        padding: 10px 15px;
+                                                        margin: 0;                                             
+                                                        margin-bottom:10px;
+                                                       
+
+                                                        
+                                                    }
+                                                    .button-try{
+                                                        @include link-button(12px,auto,$textBold,$colorBlue,white);
+                                                        padding: 10px 10px;
+                                                       
+                                                       
+                                                       
+                                                        
+                                            }
+                                        }
+            
+                                   
+            
+                            }
+                            .right-section{
+                                flex-basis: 100%;
+            
+                                .video1{
+                                    
+                                    width: 100%;
+                                    max-height: 320px;
+                                    min-height: 210px;
+                                    margin: 0;
+
+            
+                                   
+                                      
+                                   
+                                    
+                                   
+            
+            
+                                    
+                                }
+                             }
+                    }
+                }
+            }
+
+
+            // 2 блок
+            .wrapper{
+                .block-info-easy-useful{
+                    padding: 50px 0 50px 0;
+            
+                    .wrapper-center{
+                      
+                       
+            
+            
+                        .text-center{
+                            max-width: 310px;
+                           
+                            margin: 0 auto 30px auto;
+                            
+            
+            
+                            h1{
+                                @include text(30px,auto,$textSemibold,$colorBlue);
+                               
+                            }
+                            h2{
+                                @include text(16px,auto,$textSemibold,$colorGrey);
+                               
+                            }
+                            p{
+                                @include text(12px,25px,$textRegular,$colorGrey);
+                                
+                            }
+                        }
+                        .info-icons{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            text-align: center;
+                            margin-bottom:68px;
+            
+                                .block-services{
+                                  width:350px;
+                                  height:220px;
+                                  margin-right: 15px;
+                                  
+                                 
+            
+                                  h1{
+                                    @include text(16px,15px,$textSemibold,$colorBlue);
+                                    margin-bottom:15px;
+                                  }
+                                  p{
+                                    @include text(12px,10px,$textRegular,$colorGrey2); 
+                                  
+                                  }
+                                }
+                                  
+            
+            
+                                
+            
+                        }
+                       
+            
+            
+                    }
+                   
+            
+                }
+            }
+
+
+
+
+
+
+
+//Иконки
+
+        .wrapper{
+
+
+            .useful-icons{
+               display:flex;
+               flex-direction:column;
+               width: 100%;
+               
+        
+               
+               section{
+                   display:flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   width: 100%;
+                   
+                   
+                   
+                
+               }
+        
+               
+        
+                        .wrapper-icons{
+                            display:flex;
+                   flex-direction: row;
+                   
+                   
+                   max-width: 220px;
+                   width: 201px;
+        
+                   padding: 15px 0;
+        
+        
+                                .image{
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background: rgb(255, 255, 255);
+                                    width:62px;
+                                    height: 62px;
+                                    border-radius: 60px; 
+                                    
+                                    
+                                    
+        
+                                }
+                                .text{
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-left:20px;
+                                        h1{
+                                            @include text(20px,25px,$textExtrabold,white); 
+                                        }
+                                }
+                        }
+                
+                    
+        
+        
+            }
+
+    }
+
+
+
+            //Service
+            .wrapper{
+                .block-info-Services{
+                
+                   padding: 50px 0 50px 0;
+                    .wrapper-center{
+                        
+                        .text-center{
+                            max-width: 560px;
+                            text-align: center;
+                            margin: 0 auto 46px auto;
+                            
+            
+            
+                                    h1{
+                                        @include text(30px,auto,$textSemibold,$colorBlue);
+                                        padding-bottom:15px;
+                                    }
+                                    h2{
+                                        @include text(16px,auto,$textSemibold,$colorGrey);
+                                        padding-bottom:15px;
+                                    }
+                                    p{
+                                        @include text(12px,25px,$textRegular,$colorGrey);
+                                        
+                                    }
+                        }
+                        
+    
+    
+    
+    
+                        .block-services{
+                        
+                            width:100%;
+                        
+                        
+                          
+
+                                            .service:first-child{
+
+                                                .link-service{
+                                                margin-bottom: 15px;
+                                                }       
+                                                .modal-info{
+                                                  
+                                                    flex-direction: column;
+                                                    align-items: center;
+        
+        
+                                                    .text{
+                                                        max-width: 470px;
+                                                       
+        
+                                                        p{
+                                                            @include text(12px,25px,$textRegular,$colorBlue);
+                                                        }
+                                                        p:first-child{
+                                                            margin-bottom: 20px;
+                                                        }
+        
+                                                    
+                                                    }
+                                                
+                        }
+                       
+                    }
+                    }
+                }
+                }
+    
+    
+                }
+
+                //subscribe
+
+              
+                
+                
+                .wrapper{
+   
+       
+                
+                        
+
+
+        
+                    .Subscribe{
+                        
+                        padding: 20px 0 13px 0 ;
+                        box-sizing: border-box;
+                        
+                        
+                        .wrapper-center{
+                            margin:0 auto;
+                         
+                        flex-direction: column;
+                        
+                        
+                      
+                        .block-right{
+                            padding-top:0px;
+                        }
+
+
+                        .block-left{
+                            padding-top:0px;
+                            max-width: 516px;
+                             h1{
+                                 @include text(30px,auto,$textSemibold,white);
+                                 margin-bottom:10px;
+                                
+                             }
+             
+                             p{
+                                 @include text(12px,25px,$textSemibold,white); 
+                                 margin-bottom:10px;
+                             }
+                             .button{
+                                 @include link-button(12px,auto,$textBold,white,$colorBlue);
+                                 padding: 15px 20px;
+                                 max-width: 120px;                              
+                                 margin:0 auto;
+                                 margin-bottom:5px;
+                             }
+                         }
+                         .block-right{
+                             margin-left:auto;
+                           
+             
+             
+                             
+                              .message{
+                                
+                                 flex-direction: row;
+                                 margin-bottom: 10px;
+                                 position: relative;
+                                 
+                              
+             
+                                 
+                                             .profile-image{
+                                                 position: absolute;
+                                                 top:0;
+                                                 right: 0;
+                                                 margin-right:0px;
+                                                 padding-top:0px;
+                                              
+                                             }
+             
+             
+                                             .text-message{
+                                                     padding: 25px 5px 5px 10px;
+                                                    
+             
+                                                     h1{
+                                                         @include text(16px,25px,$textBold,$colorBlue);  
+                                                         margin-bottom: 15px;
+                                                     }
+                                                     p{
+                                                         @include text(12px,auto,$textRegular,$colorGrey2);  
+                                                     }
+                                 
+                                                 }
+                                                }
+                                                .message:nth-last-child(2){
+                                                    margin-bottom: 1px;
+                                                }
+                            .arrow-top,
+                            .arrow-buttom{
+                                padding-left:0px;
+                               
+                                margin-right:auto;
+                            }
+                            .arrow-top{
+                                margin-bottom: 1px;
+                            }
+                                            }
+                                        }
+                                    
+                    }
+                    
+                }
+
+
+
+
+                //OUR TEAM
+                .block-info-OUR-TEAM{
+                    padding: 95px 0 88px 0;
+            
+                    .wrapper-center{
+        
+                        max-width: 320px;
+                        display: flex;
+                        flex-direction: column;
+                        
+            
+            
+                        .text-top{
+                            max-width: 560px;
+                            text-align: center;
+                            margin: 0 auto 25px auto;
+                            
+            
+            
+                                    h1{
+                                        @include text(30px,auto,$textSemibold,$colorBlue);
+                                        padding-bottom:15px;
+                                    }
+                                   
+                                    p{
+                                        @include text(12px,25px,$textRegular,$colorGrey);
+                                        
+                                    }
+                        }
+                        .img-profile{
+                            display:flex;
+                            flex-direction: row;
+                            width:460px;
+                            max-width: 320px;
+                            justify-content: space-between;
+                            
+                            
+                            align-items: center;
+                            margin: 0 auto;
+                            margin-bottom:35px;
+                                 
+                            .img2{
+                               
+                                overflow: hidden;
+                                
+                               background: url(../img/bg-circle.png) no-repeat center center;
+                               background-size: 90% auto;
+                               img{
+                                   width: 100%;
+                                   height: auto;
+                               }
+                            }
+                            img{
+                                width:100%;
+                                height: auto;
+                            }
+                        }
+        
+                        .text-bottom{
+                            
+                            text-align: center;
+                            margin: 0 auto 30px auto;
+                            
+            
+            
+                                    h2{
+                                        @include text(16px,25px,$textBold,$colorBlue);
+                                        padding-bottom:15px;
+                                    }
+                                   
+                                    p{
+                                        @include text(12px,25px,$textRegular,$colorGrey);
+                                        
+                                    }
+        
+                        }
+                        .social-button{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            width:200px;
+                            justify-content: space-between;
+                            margin: 0 auto;
+                        }
+                    }
+            
+
+            }
+
+
+         //form
+         .block-form-Contact-Us{
+            padding: 50px 0 50px 0;
+            background:#fafafa;
+    
+            .wrapper-center{
+
+                max-width: 320px;
+                display: flex;
+                flex-direction: column;
+                
+    
+    
+                .text-top{
+                    max-width: 560px;
+                    text-align: center;
+                    margin: 0 auto 45px auto;
+                    
+    
+    
+                            h1{
+                                @include text(30px,auto,$textSemibold,$colorBlue);
+                                padding-bottom:15px;
+                            }
+                           
+                            p{
+                                @include text(12px,25px,$textRegular,$colorBlue);
+                                
+                            }
+                }
+
+
+            
+                .form-subscribe{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        max-width: 600px;
+
+                            input::placeholder,
+                            textarea::placeholder{
+                            @include text(12px,20px,$textMedium,$colorBlue);
+                           
+                            
+                            
+                            }
+                            
+
+                            input,
+                            textarea{
+                                border-radius: 5px;
+                                border:1px solid $colorBlue;
+                                padding: 15px;
+                                box-sizing: border-box;
+                                width:320px;
+                                
+                                margin-bottom: 20px;
+                                
+                            }
+
+                        
+
+                            textarea{ 
+                                padding-top:10px; 
+                                box-sizing: border-box;                       
+                                resize: none;
+                               width: 600px;
+                               max-width: 320px;
+                               height: 100px;
+                            }
+                            .name,
+                            .email{
+                                margin-right:0px;
+                            }
+
+
+                            .box-button{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                    label{
+                                        @include text(15px,auto,$textMedium,$colorBlue); 
+                                        
+                                    }
+
+                                
+                                    
+                                    input[type="checkbox"] {
+                                        display:none;
+                                    }
+                                    input[type="checkbox"] + label span {
+                                        display:inline-block;
+                                        width:10px;
+                                        height:10px;
+                                        margin:0 9px 0 0;
+                                        vertical-align:middle;
+                                        border: 3px solid $colorBlue;
+                                        border-radius: 1px ;
+
+                                        cursor:pointer;
+                                    
+                                    }
+                                    input[type="checkbox"]:checked + label span {
+                                        width:14px;
+                                        height:14px;
+                                        border: 1px solid $colorBlue;
+                                        background:url(../img/Checkbox-blue.svg_.png)  no-repeat;
+                                        
+                                    }
+
+                                    .button-form{
+                                        @include link-button(16px,30px,$textMedium,white,#1de9b6);
+                                        padding: 10px 43.5px;
+                                        box-shadow: $box-shadow1;
+                                        border-radius: 3px;
+                                        margin-left: auto;
+                                    
+                                    }
+                        }
+                                  
+                                    
+                                
+                            
+
+
+                }
+
+
+            }
+        }
+
+
+
+        #footer{
+            flex: 0 0 auto;
+            
+            .wrapper{
+               
+             .wrapper-center{
+                 padding: 35px 0 20px 0;
+               
+          
+                              .main-footer{
+                                  padding: 0;
+                             
+                              flex-direction: column;
+                           
+                             
+                                    // Стили логотипа
+                                  .logo{
+                                      margin: 0 0 20px 40px;
+                                     
+          
+                                          h1{
+                                              @include text(15px,15px,$textExtrabold,white)
+                                              
+                                          }
+                                          h1:first-child{
+                                              font-family: $textRegular;
+                                              
+                                          }
+          
+                                  }
+                                  .logo::before{
+                                  @include ps-icons(0,-40px,'../img/bolt.png',30px,30px,30px,30px);
+          
+                                  }
+                                   // Стили кнопок навигации
+                                  .main-button{
+                                       width: 320px;
+                                       display: flex;
+                                       flex-direction: row;
+                                       justify-content: space-between;
+          
+                                          a{ 
+                                              @include link-button(14px,25px,$textSemibold,white,transparent);
+                                             
+                                          }
+                                         
+                                  }
+                                }
+                                .bottom-menu{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+        
+                                    .about{
+                                        display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 312px;
+                                    margin-bottom: 20px;
+        
+                                      h2{
+                                        @include text(15px,25px,$textRegular,#838f9b)
+                                      }
+                                    }
+        
+                                    .social-button{
+                                        display: flex;
+                                    flex-direction: row;
+                                        width: 174px;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        margin: 0 auto;
+                                    }
+                                }
+        
+        
+                            }
+                        }
+                    }
+
+
+
+
+
+
+
+
+
+
+        }
+
+
